@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VARSHA & AMAR | Shubh Vivah</title>
+    <title>Varsha & Amar | Shubh Vivah</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
@@ -58,35 +58,6 @@
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #ff8c00;
-      }
-
-      /* --- Audio Controls --- */
-      .audio-player {
-        position: fixed;
-        top: 25px;
-        right: 25px;
-        z-index: 1000;
-        background: rgba(0, 0, 0, 0.6);
-        border: 2px solid var(--marigold);
-        padding: 12px;
-        border-radius: 50%;
-        cursor: pointer;
-        box-shadow: 0 0 15px var(--marigold);
-        transition: 0.3s;
-      }
-      .audio-player.playing {
-        animation: pulse 2s infinite;
-      }
-      @keyframes pulse {
-        0% {
-          transform: scale(1);
-        }
-        50% {
-          transform: scale(1.1);
-        }
-        100% {
-          transform: scale(1);
-        }
       }
 
       /* --- Floating Hearts --- */
@@ -313,9 +284,9 @@
         position: relative;
       }
 
-      .polaroid-frame img {
+      .polaroid-frame img,
+      .polaroid-frame video {
         width: 100%;
-        aspect-ratio: 3/4;
         object-fit: cover;
         display: block;
       }
@@ -333,7 +304,6 @@
 
       /* --- Wedding Image Specific --- */
       .polaroid-frame.wedding img {
-        aspect-ratio: 4/3;
         object-fit: contain;
         background: #fff;
       }
@@ -404,27 +374,21 @@
   </head>
 
   <body>
-    <audio id="weddingSong" loop>
-      <source src="varmar  imgs/Sai_Abhyankkar_-_Aasa_Kooda__Music_Video____Thejo_Bharathwaj___Preity_Mukundhan___Sai_Smriti(128k).m4a" type="audio/mpeg" />
-    </audio>
-
-    <div class="audio-player" id="playerBtn">
-      <span id="playerIcon" style="font-size: 20px">🎵</span>
-    </div>
-
     <section class="hero">
       <div class="hero-parallax-bg" id="parallaxBg"></div>
       <div class="hero-overlay"></div>
 
       <div class="royal-arch">
-        <img src="varmar  imgs/gold ganesh .png" class="ganesha-icon" alt="Ganesha" />
+        <img
+          src="varmar  imgs/gold ganesha.png"
+          class="ganesha-icon"
+          alt="Ganesha" />
         <h2>Shubh Vivah</h2>
         <h1>Varsha <br />& <br />Amar</h1>
         <p style="letter-spacing: 3px; color: #fcf6ba; margin-top: 15px">
           26 JAN 2023
         </p>
       </div>
-
     </section>
 
     <div class="section-container">
@@ -436,19 +400,19 @@
 
         <div class="photo-stack">
           <div class="reveal-box float-left reveal">
-            <div class="polaroid-frame">
+            <div class="polaroid-frame haldi">
               <img src="varmar  imgs/haldi 1 .jpeg" alt="Haldi 1" />
               <div class="polaroid-caption">Bride</div>
             </div>
           </div>
           <div class="reveal-box float-right reveal">
-            <div class="polaroid-frame">
+            <div class="polaroid-frame haldi">
               <img src="varmar  imgs/haldi 2.jpeg" alt="Haldi 2" />
               <div class="polaroid-caption">Groom</div>
             </div>
           </div>
           <div class="reveal-box float-right reveal">
-            <div class="polaroid-frame">
+            <div class="polaroid-frame haldi">
               <img src="varmar  imgs/haldi 3.jpeg" alt="Haldi 2" />
               <div class="polaroid-caption">Blessings</div>
             </div>
@@ -460,9 +424,33 @@
             </div>
           </div>
           <div class="reveal-box float-right reveal">
-            <div class="polaroid-frame">
+            <div class="polaroid-frame haldi">
               <img src="varmar  imgs/haldi 5.jpeg" alt="Haldi 2" />
               <div class="polaroid-caption">Blessings</div>
+            </div>
+          </div>
+          <div class="reveal-box float-right reveal">
+            <div class="polaroid-frame haldi">
+              <video
+                src="varmar  imgs/haldi1vidoe.mp4"
+                loop
+                playsinline
+                width="100%"
+                height="auto"
+                class="auto-play-video"></video>
+              <div class="polaroid-caption">party</div>
+            </div>
+          </div>
+          <div class="reveal-box float-right reveal">
+            <div class="polaroid-frame haldi">
+              <video
+                src="varmar  imgs/haldi.mp4"
+                loop
+                playsinline
+                width="100%"
+                height="auto"
+                class="auto-play-video"></video>
+              <div class="polaroid-caption">party</div>
             </div>
           </div>
         </div>
@@ -503,6 +491,30 @@
               <div class="polaroid-caption">Forever</div>
             </div>
           </div>
+          <div class="reveal-box float-left reveal">
+            <div class="polaroid-frame">
+              <video
+                src="varmar  imgs/slideshow 1.mp4"
+                loop
+                playsinline
+                width="100%"
+                height="auto"
+                class="auto-play-video"></video>
+              <div class="polaroid-caption">Forever</div>
+            </div>
+          </div>
+          <div class="reveal-box float-left reveal">
+            <div class="polaroid-frame">
+              <video
+                src="varmar  imgs/moments.mp4"
+                loop
+                playsinline
+                width="100%"
+                height="auto"
+                class="auto-play-video"></video>
+              <div class="polaroid-caption">Forever</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -510,6 +522,16 @@
         <h2 class="section-title">wedding</h2>
         <div class="marigold-divider"></div>
 
+        <div class="photo-stack">
+          <div class="reveal-box float-right reveal">
+            <div class="polaroid-frame wedding">
+              <img src="varmar  imgs/marrge img 1.jpg" alt="wedding" />
+              <div class="polaroid-caption">WE</div>
+            </div>
+          </div>
+        </div>
+
+        <br />
         <div class="photo-stack">
           <div class="reveal-box float-right reveal">
             <div class="polaroid-frame wedding">
@@ -567,23 +589,6 @@
         .querySelectorAll(".reveal")
         .forEach((el) => observer.observe(el));
 
-      // 4. Audio Control
-      const song = document.getElementById("weddingSong");
-      const btn = document.getElementById("playerBtn");
-      const icon = document.getElementById("playerIcon");
-
-      btn.addEventListener("click", () => {
-        if (song.paused) {
-          song.play().catch((e) => console.log("User must interact first"));
-          btn.classList.add("playing");
-          icon.innerText = "⏸";
-        } else {
-          song.pause();
-          btn.classList.remove("playing");
-          icon.innerText = "🎵";
-        }
-      });
-
       // 5. Heart Rain Animation
       const rainContainer = document.getElementById("heart-rain");
       function createHeart() {
@@ -598,7 +603,68 @@
         setTimeout(() => h.remove(), 7000);
       }
       setInterval(createHeart, 800);
+
+      // 6. Auto-play Videos with Sound on Scroll - One at a time (Mobile & Desktop)
+      const videoObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const video = entry.target;
+
+            if (entry.isIntersecting) {
+              // Pause all other videos
+              document.querySelectorAll(".auto-play-video").forEach((v) => {
+                if (v !== video) {
+                  v.pause();
+                }
+              });
+
+              // Play current video with sound
+              video.muted = false;
+
+              // Try to play - use setTimeout for mobile compatibility
+              const playPromise = video.play();
+              if (playPromise !== undefined) {
+                playPromise
+                  .then(() => {
+                    console.log("Video playing");
+                  })
+                  .catch((error) => {
+                    console.log("Video autoplay failed:", error);
+                    // Fallback: unmute and try again
+                    video.muted = false;
+                  });
+              }
+            } else {
+              // Pause when out of view
+              video.pause();
+            }
+          });
+        },
+        { threshold: 0.25 },
+      );
+
+      // Add click handler for mobile - play video on tap
+      document.querySelectorAll(".auto-play-video").forEach((video) => {
+        videoObserver.observe(video);
+
+        // Mobile fallback: allow playing on click/tap
+        video.addEventListener("click", () => {
+          video.muted = false;
+
+          // Pause all other videos
+          document.querySelectorAll(".auto-play-video").forEach((v) => {
+            if (v !== video) {
+              v.pause();
+            }
+          });
+
+          video.play().catch((e) => console.log("Play failed:", e));
+        });
+
+        // Ensure playsinline works
+        video.setAttribute("playsinline", "");
+        video.setAttribute("webkit-playsinline", "");
+      });
     </script>
   </body>
 </html>
-
